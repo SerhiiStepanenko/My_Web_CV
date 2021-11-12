@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #1C94E2;
+}
+
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 2;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+}
+.loader{
+    width: 55px;
+    height: 55px;
+    border: 10px solid aliceblue;
+    border-radius: 50%;
+    border-top-color: #1C94E2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 2s spin infinite linear;
+}
+.preloader.done{
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes spin{
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.scroll{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
+.scroll img{
+    width: 30px;
+}
+
+.block-content{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+.header{
+    background-image: url('./img/SlF3KiJ.jpeg');
+    backface-visibility: hidden;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: block;
+    overflow: visible;
+    position: relative;
+    max-width: 100%;
+    height: 600px;
+    color: aliceblue;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;   
+}
+
+.name-block{
+    position: absolute;
+    top: 150px;
+}
+
+.button-block{
+    width: 80%;
+    position: absolute;
+    top: 350px;
+}
+
+.button-block__flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.email-questions span{
+    vertical-align: middle;
+    font-size: 17px;
+}
+.email-questions a{
+    text-decoration: none;
+    color: #1C94E2;
+}
+
+.button-download-CV{
+    transition: 0.5s;
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #1C94E2;
+    border: none;
+    cursor: pointer;
+}
+.button-download-CV:hover{
+    transition: 0.5s;
+    width: 220px;
+    height: 35px;
+}
+.button-download-CV img{
+    width: 15px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.ava{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.ava img{
+    width: 200px;
+    border-radius: 100%;
+    border: 7px solid aliceblue;
+}
+
+.navigation__flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    display: inline-block;
+    border-left: 1px solid #eaeaea;
+}
+.menu li:nth-child(2){
+    display: inline-block;
+    border-right: 1px solid #eaeaea;
+}
+
+.menu li a{
+    color: #333333;
+    display: block;
+    left: 1px;
+    padding: 22px 25px 20px;
+    position: relative;
+}
+
+.menu__icon{
+    width: 11px;
+    margin-left: 5px;
+}
+
+.about-me{
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .2);
+}
+.about-me h1{
+    color: #333333;
+}
+
+
+.about-me__flex-container{
+    display: flex;
+}
+
+.about-me__i-am{
+    width: 50%;
+    padding: 40px 40px 20px 40px;
+    text-align: justify;
+    background-color: #F5F5F5;
+}
+.about-me__i-am h1{
+    margin-bottom: 20px;
+}
+.about-me__i-am p{
+    line-height: 140%;
+    font-size: 17px;
+    color: #77777F;
+}
+.about-me__button-download-CV{
+    transition: 0.5s;
+    margin: 20px 0 20px 0;
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #1C94E2;
+    border: none;
+    cursor: pointer;
+}
+.about-me__button-download-CV:hover{
+    transition: 0.5s;
+    width: 220px;
+    height: 35px;
+    margin: 20px 0 15px 0;
+}
+.about-me__button-download-CV img{
+    width: 15px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.about-me__personal-info{
+    width: 50%;
+    padding: 40px;
+    background-color: #F0F0F0;
+}
+.about-me__personal-info h1{
+    text-align: right;
+    margin-bottom: 20px;
+}
+.about-me__personal-info p{
+    font-size: 17px;
+    line-height: 180%;
+}
+.about-me__icon{
+    width: 18px;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.my-resume__title{
+    margin: 40px 0 20px 0;
+    color: #333333;
+}
+
+.my-resume__flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-resume__block-items{
+    border: 1px solid #F0F0F0;
+    width: 44%;
+    padding: 30px;
+}
+.block-items__flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.block-items__icon{
+    width: 50px;
+}
+
+.my-resume__events img{
+    width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.my-resume__events{
+    vertical-align: middle;
+}
+.my-resume__events div span{
+    vertical-align: middle;
+    line-height: 180%;
+}
+.my-resume__events div p{
+    vertical-align: middle;
+    line-height: 180%;
+}
+
+.last-block{
+    margin-top: 50px;
+}
+
+.courses{
+    background-color: #F5F5F5;
+}
+
+.courses__title{
+    margin: 40px 0 20px 0;
+    color: #333333;
+    padding-top: 40px;
+}
+
+.courses__flex-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.courses__item img{
+    width: 80%;
+}
+.courses__item img:hover{
+    outline: 5px solid #1C94E2;
+}
+
+footer{
+    height: 60px;
+    text-align: center;
+    line-height: 5em;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .2);
+}
+
+
+/**
+Adaptive
+**/
+@media (max-width: 1200px){
+    .my-resume__flex-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .my-resume__block-items{
+        width: 80%;
+        font-size: 20px;
+    }
+    .courses__flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .courses__item {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .courses__item img{
+        width: 70%;
+    }
+}
+@media (max-width: 992px){
+    .ava{
+        position: absolute;
+        right: 100%;
+        top: 20%;
+    }
+    .email-questions{
+        text-align: right;
+
+    }
+}
+@media(max-width: 768px){
+    .button-download-CV{
+        width: 150px;
+        height: 25px;
+    }
+    .ava img{
+        width: 100px;
+    }
+    .ava{
+        position: absolute;
+        right: 100%;
+        top: 10%;
+    }
+    .button-download-CV:hover{
+        transition: 0.5s;
+        width: 190px;
+        height: 30px;
+    }
+}
